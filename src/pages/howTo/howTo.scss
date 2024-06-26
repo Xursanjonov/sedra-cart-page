@@ -1,0 +1,173 @@
+.how__to {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.how__to__header {
+  height: 300px;
+  width: 100%;
+  border-radius: 24px;
+  background: #eaf1eb;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 50px;
+  padding-top: 75px;
+  margin: 40px 0;
+  h1 {
+    font-size: 45px;
+    width: 50%;
+  }
+}
+
+.how__to__body {
+  display: flex;
+  gap: 50px;
+  justify-content: space-between;
+  .how__to__body__left {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    font-weight: 400;
+    h3 {
+      font-size: 16px;
+    }
+    &__img {
+      width: 100%;
+    }
+  }
+  .how__to__body__right {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    .homeBlog__cards__right {
+      min-height: 600px;
+    }
+  }
+}
+
+.homeBlog__cards__right__top {
+  background: url(../../assets/images/blog-right.png) no-repeat bottom right;
+  background-color: #eff2f8;
+  border-radius: 12px;
+  min-height: 600px;
+}
+
+.homeBlog__cards__right__bottom {
+  background: url(../../assets/images/howToGirl.svg) no-repeat bottom right;
+  background-color: #eff7f0;
+  border-radius: 12px;
+  min-height: 600px;
+}
+
+.how__to__footer {
+  background: #359740;
+  min-height: 110px;
+  padding: 30px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &__left {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: white;
+  }
+  &__right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 1050px) {
+  .how__to__body__left,
+  .how__to__body__right {
+    width: 50% !important;
+  }
+  .homeBlog__cards__right,
+  .homeBlog__cards__right__bottom {
+    min-height: 800px;
+  }
+}
+
+@media (max-width: 980px) {
+  .how__to__body__left {
+    h3 {
+      display: -webkit-box;
+      line-clamp: 6;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 6;
+      overflow: hidden;
+    }
+  }
+}
+
+@media (max-width: 940px) {
+  .how__to__header {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    h1 {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .how__to__body {
+    flex-direction: column;
+  }
+  .how__to__body__left,
+  .how__to__body__right {
+    width: 100% !important;
+  }
+  .how__to__body__right {
+    h2 {
+      display: none;
+    }
+    flex-direction: row !important;
+  }
+  .homeBlog__cards__right__top,
+  .homeBlog__cards__right__bottom {
+    min-height: 600px;
+  }
+}
+
+@media (max-width: 600px) {
+  .how__to__body__right {
+    h2 {
+      display: block;
+    }
+    flex-direction: column !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .how__to__header {
+    padding: 10px;
+
+    h1 {
+      font-size: 30px;
+    }
+  }
+}
+@media (max-width: 470px) {
+  .how__to__footer {
+    flex-direction: column;
+    gap: 40px;
+    padding: 20px;
+  }
+}
+
+@media (max-width: 330px) {
+  .how__to__header {
+    h1 {
+      font-size: 20px;
+    }
+  }
+}

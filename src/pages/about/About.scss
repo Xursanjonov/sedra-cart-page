@@ -1,0 +1,172 @@
+.our-story {
+  &__overall {
+    width: 100%;
+    align-items: center;
+    display: flex;
+    gap: 65px;
+    justify-content: space-between;
+    flex-wrap: wrap; 
+  }
+
+  &__image {
+
+    img {
+      max-width: 100%;
+      border-radius: 10px;
+    }
+  }
+
+  &__heading {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    color: #1f2533;
+  }
+
+  &__paragraph {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 28px;
+    color: #1f2533;
+    max-width: 521px;
+    margin-bottom: 15px;
+  }
+
+  &__text {
+    flex: 2;
+    margin-left: 2rem;
+  }
+
+  @media (max-width: 1130px) {
+    &__overall {
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    &__text {
+      margin-left: 0;
+    }
+
+    &__heading {
+      font-size: 28px;
+    }
+
+    &__paragraph {
+      font-size: 14px;
+      line-height: 24px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    padding: 1rem;
+
+    &__heading {
+      font-size: 24px;
+    }
+
+    &__paragraph {
+      font-size: 12px;
+      line-height: 20px;
+    }
+  }
+}
+
+.meet-our-team {
+  text-align: center;
+  padding: 20px;
+}
+
+.meet-our-team__overall {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.meet-our-team__title {
+  font-size: 36px;
+  color: #1f2533;
+  font-size: 36px;
+  margin-top: 79px;
+  margin-bottom: 79px;
+}
+
+.meet-our-team__member {
+  display: inline-block;
+  margin: 0 20px;
+  text-align: center;
+}
+
+.meet-our-team__member-image {
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.meet-our-team__member-name {
+  font-size: 22px;
+  color: #1F2533;
+  margin: 10px 0 5px;
+  font-weight: 600;
+}
+
+.meet-our-team__member-role {
+  color: #1F2533;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.meet-our-team {
+  text-align: center;
+  padding: 20px;
+
+  &__title {
+    font-size: 36px;
+    color: #1f2533;
+    margin-top: 79px;
+    margin-bottom: 79px;
+  }
+
+  &__overall {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    
+    @media (max-width: 1195px) {
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch; 
+      padding-bottom: 20px; 
+    }
+  }
+
+  &__member {
+    display: inline-block;
+    margin: 0 20px;
+    text-align: center;
+    flex-shrink: 0; 
+
+    @media (max-width: 768px) {
+      margin: 0 10px; 
+    }
+  }
+
+  &__member-image {
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+
+  &__member-name {
+    font-size: 22px;
+    color: #1f2533;
+    margin: 10px 0 5px;
+    font-weight: 600;
+  }
+
+  &__member-role {
+    color: #1f2533;
+    font-size: 16px;
+    font-weight: 300;
+  }
+}

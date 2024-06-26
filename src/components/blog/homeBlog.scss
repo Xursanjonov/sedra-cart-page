@@ -1,0 +1,237 @@
+.homeBlog {
+  padding: 35px 0;
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 42px;
+  }
+
+  &__title {
+    color: #1f2533;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 54px;
+    letter-spacing: -5%;
+  }
+
+  &__btn {
+    padding: 11px 33px;
+    background-color: transparent;
+    border-radius: 10px;
+    border: 1px solid #efefef;
+    color: #359740;
+    font-size: 16px;
+    letter-spacing: -3.5%;
+    font-weight: 500;
+    line-height: 172%;
+    transition: 0.3s ease;
+
+    &:hover {
+      background-color: #359740;
+      color: #fff;
+    }
+
+    &:active {
+      transform: scale(0.9);
+    }
+  }
+
+  &__cards {
+    display: flex;
+    gap: 30px;
+  }
+
+  &__cards__left {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  &__cards__bottom {
+    display: flex;
+    gap: 30px;
+  }
+
+  &__cards__top {
+    border-radius: 10px;
+    background: url(../../assets/images/blog-top.png) no-repeat bottom right;
+    background-color: #eaf1eb;
+  }
+
+  &__cards-bottom {
+    background: url(../../assets/images/blog-bottom.png) no-repeat bottom right;
+    background-color: #eff2f8;
+  }
+
+  &__cards__right {
+    background: url(../../assets/images/blog-right.png) no-repeat bottom right;
+    background-color: #eff2f8;
+    border-radius: 10px;
+  }
+
+  &__card {
+    border-radius: 10px;
+    padding: 30px;
+
+    &__time {
+      display: flex;
+      align-items: center;
+      color: #70737c;
+      margin-bottom: 8px;
+    }
+
+    &__time-icon {
+      font-size: 24px;
+      color: #70737c;
+    }
+
+    &__title {
+      max-width: 372px;
+      margin-bottom: 4px;
+      color: #1f2533;
+      font-size: 24px;
+      line-height: 31px;
+      letter-spacing: -2%;
+      font-weight: 600;
+    }
+
+    &__text {
+      max-width: 400px;
+      color: #70737c;
+      font-size: 14px;
+      margin-bottom: 14px;
+    }
+
+    &__btn {
+      margin-top: 5px;
+      padding: 11px 33px;
+      background-color: #fff;
+      color: #359740;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 178%;
+      letter-spacing: -3.5%;
+      border: none;
+      border-radius: 5px;
+      transition: 0.3s;
+
+      &:hover {
+        background: #359740;
+        color: #fff;
+      }
+
+      &:active {
+        transform: scale(0.9);
+      }
+    }
+  }
+}
+
+@media (max-width: 1130px) {
+  .homeBlog {
+    &__cards {
+      flex-direction: column;
+
+      &__bottom {
+        justify-content: space-between;
+      }
+
+      &__right {
+        background: url(../../assets/images/blog-right.png) no-repeat bottom right;
+        background-size: contain;
+        background-color: #eff2f8;
+      }
+    }
+  }
+}
+
+@media (max-width: 730px) {
+  .homeBlog {
+    &__title {
+      font-size: 26px;
+    }
+
+    &__btn {
+      padding: 5px 25px;
+      line-height: normal;
+      font-size: 13px;
+    }
+
+    &__cards {
+      &__bottom {
+        flex-direction: column;
+      }
+
+      &__title {
+        font-size: 20px;
+        line-height: normal;
+      }
+    }
+
+    &__cards__top {
+      background-size: 150px;
+    }
+
+    &__cards-bottom {
+      background-size: 150px;
+    }
+
+    &__cards__right {
+      background-size: 150px;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .homeBlog {
+    &__card {
+      background: linear-gradient(#ffffff6d);
+    }
+
+    &__card__btn {
+      border: 1px solid #eee;
+    }
+
+    &__cards__top {
+      background: linear-gradient(rgba(255, 255, 255, 0.8),
+          rgba(255, 255, 255, 0.8)),
+        url(../../assets/images/blog-top.png) no-repeat bottom right;
+      border: 1px solid #eee;
+    }
+
+    &__cards-bottom {
+      background: linear-gradient(rgba(255, 255, 255, 0.8),
+          rgba(255, 255, 255, 0.8)),
+        url(../../assets/images/blog-bottom.png) no-repeat bottom right;
+    }
+
+    &__cards__right {
+      background: linear-gradient(rgba(255, 255, 255, 0.8),
+          rgba(255, 255, 255, 0.8)),
+        url(../../assets/images/blog-right.png) no-repeat bottom right;
+    }
+  }
+}
+
+// @media (max-width: 600px) {
+//   .blog {
+//     &__cards {
+//       flex-direction: row;
+//       overflow: auto;
+//       width: 100%;
+
+//       &__bottom {
+//         flex-direction: row;
+//       }
+
+//       &__left {
+//         flex-direction: row;
+//       }
+//     }
+
+//     &__item {
+//       width: 350px;
+//     }
+//   }
+// }
